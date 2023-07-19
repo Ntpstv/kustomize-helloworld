@@ -3,7 +3,9 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 resources:
-  - deployment.yaml
-  - service.yaml
-
+- deployment.yaml
+- service.yaml
 namespace: att-training
+images:
+- name: asia.gcr.io/poc-innovation-iot/cicd
+  newTag: 5cbd52c8
