@@ -1,4 +1,4 @@
-argocd app create example-service-att --repo https://github.com/Ntpstv/kustomize-helloworld.git --path ./ --dest-server https://34.142.207.252 --dest-namespace att-training
+# argocd app create example-service-att --repo https://github.com/Ntpstv/kustomize-helloworld.git --path ./ --dest-server https://34.142.207.252 --dest-namespace att-training
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
